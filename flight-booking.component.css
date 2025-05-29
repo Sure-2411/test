@@ -88,6 +88,49 @@
   box-shadow: 
     0 25px 50px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+}
+
+.flight-details-card .card-header {
+  background: linear-gradient(135deg, #1e88e5, #42a5f5); /* Blue gradient */
+  color: white;
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem;
+  border-radius: 12px 12px 0 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle shadow for better readability */
+}
+
+.flight-details-card .text-primary {
+  color: #007bff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.flight-details-card .text-success {
+  color: #28a745;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.flight-details-card .text-danger {
+  color: #dc3545;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.flight-details-card .text-muted {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.flight-details-card .text-large {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .card-body {
@@ -169,16 +212,36 @@
 .booking-info-card {
   border-radius: 24px;
   background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
-  overflow: hidden;
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  padding: 2rem;
 }
 
 .booking-info-card .card-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #ffffff;
-  font-size: 1.6rem;
-  font-weight: 700;
+  background: linear-gradient(135deg, #42a5f5, #478ed1); /* Cool blue gradient */
+  color: white;
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  padding: 1.5rem;
+  border-radius: 12px 12px 0 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+}
+
+.booking-info-card .card-title {
+  font-size: 2rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* Vibrant orange gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better readability */
+  margin-bottom: 1rem;
 }
 
 .form-label {
@@ -186,6 +249,12 @@
   color: #495057;
   margin-bottom: 0.75rem;
   font-size: 1rem;
+}
+
+.booking-info-card .form-label {
+  font-weight: bold;
+  color: #495057;
+  font-size: 1.2rem;
 }
 
 .form-control {
@@ -198,6 +267,14 @@
   backdrop-filter: blur(10px);
 }
 
+.booking-info-card .form-control {
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+  padding: 1rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
 .form-control:focus {
   border-color: #667eea;
   box-shadow: 
@@ -205,6 +282,13 @@
     0 8px 25px rgba(102, 126, 234, 0.15);
   background: rgba(255, 255, 255, 1);
   transform: translateY(-2px);
+}
+
+.booking-info-card .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 
+    0 0 0 3px rgba(0, 123, 255, 0.1),
+    0 8px 25px rgba(0, 123, 255, 0.15);
 }
 
 /* Button Enhancements */
@@ -222,6 +306,16 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.booking-info-card .btn-gradient {
+  background: linear-gradient(135deg, #673ab7, #9c27b0);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
 .btn-gradient::before {
@@ -243,6 +337,12 @@
   background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+.booking-info-card .btn-gradient:hover {
+  background: linear-gradient(135deg, #9c27b0, #673ab7);
+  box-shadow: 0 8px 25px rgba(103, 58, 183, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn-gradient:disabled {
@@ -312,10 +412,16 @@
 }
 
 .modal-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 2.5rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background: linear-gradient(135deg, #42a5f5, #478ed1); /* Cool blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better readability */
+  margin-bottom: 1rem;
 }
 
 .modal-body {
@@ -496,4 +602,18 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Flight Information Header */
+.flight-info-header {
+  font-size: 2.5rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better readability */
+  margin-bottom: 1rem;
 }
